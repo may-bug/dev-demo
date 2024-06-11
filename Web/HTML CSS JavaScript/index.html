@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/js.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>示例</title>
-</head>
-<body>
-    <header class="wapper">
-        <div class="logo">
-            <a href=""><img src="./images/logo.png" alt=""></a>
-        </div>
-        <div class="item">
-            <ul>
-                <li class="item">首页</li>
-                <li class="item">课程</li>
-                <li class="item">职业规划</li>
-            </ul>
-        </div>
-        <div class="sraech">
-            <input type="text" class="search" placeholder="请输入关键词">
-            <button id="search"><img src="./images/btn.png" alt=""></button>
-        </div>
-        <div class="user">
-            <img src="./images/user.png" alt="">
-            <span>username</span>
-        </div>
-        <button onclick="add()">添加</button>
-        <div id="test">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="wapper">
+      <div class="logo">
+        <a href=""> <img src="./images/logo.png" alt="" /></a>
+      </div>
+      <ul class="menu">
+        <li class="item"><a>首页</a></li>
+        <li class="item"><a>课程</a></li>
+        <li class="item"><a>职业规划</a></li>
+      </ul>
+      <div class="search">
+        <input placeholder="请输入关键字" class="search-input"/><button onclick="btnClick()" class="header-btn"></button>
+      </div>
+      <div class="user">
+        <img src="./images/user.png" alt="" />
+        <span>username</span>
+      </div>
     </header>
-</body>
+    <section id="wipper">
+        <a href="" class="item"><img src="./images/banner1.jpg" alt=""><span>“纯血”鸿蒙 全薪出发</span></a>
+        <a href="" class="item"><img src="./images/banner2.jpg" alt=""><span>Java薪升级V14.0 打造高级人才</span></a>
+        <a href="" class="item"><img src="./images/banner3.jpg" alt=""><span>成为华为授权培训伙伴</span></a>
+        <a href="" class="item"><img src="./images/banner4.jpg" alt=""><span>Python+大数据开发 V4.5课程重磅升级</span></a>
+        <a href="" class="item"><img src="./images/banner5.jpg" alt=""><span>软件测试V6.1 全新上线</span></a>
+        <a href="" class="item"><img src="./images/banner6.jpg" alt=""><span>新媒体课程升级 AIGC赋能薪未来</span></a>
+        <button class="left-btn deactive"> < </button>
+        <button class="right-btn deactive"> > </button>
+        <ul class="over-view"></ul>
+    </section>
+    <button onclick="test()">发送</button>
+    <div id="container"></div>
+    <footer id="footer">
+        <span>CopyRight By &copy; 讯飞工作室.</span>
+    </footer>
+    <script src="./js//do.js"></script>
+  </body>
 </html>
